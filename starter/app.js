@@ -33,6 +33,7 @@ const options = {
 
 const swaggerSpec = swaggerJSDoc
 app.use('/api-docs',swaggerUi.serve, swaggerUi.setup(swaggerSpec))
+
 app.use('/api/v1/tasks',tasks)
 
 const port = 3000
